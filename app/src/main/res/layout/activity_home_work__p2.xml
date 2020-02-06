@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeWork_P2">
 
-    <Button
+    <!--<Button
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -14,6 +16,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="show dialog"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"/>-->
+    <!--//////////////////////////////////////////////-->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Enter your name"
+        android:background="@color/EditTextColor"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Enter your last name"
+        android:background="@color/EditTextColor"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email"
+        android:background="@color/EditTextColor"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:hint="Enter your phone number"
+        android:background="@color/EditTextColor"/>
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save to Profile"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        />
 
-</LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

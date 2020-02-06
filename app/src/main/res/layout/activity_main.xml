@@ -1,134 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/edtName"
+       android:textColor="@android:color/holo_red_dark"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:textSize="20sp"
+       android:inputType="textPersonName"
+       android:hint="Name"
+       android:background="@color/EditTextColor"/>
+    <EditText
+        android:id="@+id/edtLastName"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="F1 quarter :" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/colorAccent"/>
-    <LinearLayout
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="120dp">
-
-        <TextView
-            android:layout_weight="2"
-            android:layout_width="0dp"
-            android:layout_height="120dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="F1"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:textSize="25sp"/>
-        <ImageView
-            android:layout_weight="4"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="0dp"
-            android:layout_height="120dp"/>
-
-
-    </LinearLayout>
-
-    <TextView
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:hint="Family"
+        android:background="@color/EditTextColor"/>
+    <EditText
+        android:id="@+id/edtEmail"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="F2 quarter :" />
-    <View
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:background="@color/EditTextColor"/>
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:textColor="@android:color/holo_red_dark"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@color/colorAccent"/>
-    <LinearLayout
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:hint="Phone number"
+        android:background="@color/EditTextColor"/>
+    <Button
+        android:id="@+id/btnSave"
         android:layout_width="match_parent"
-        android:layout_height="120dp">
-
-        <TextView
-            android:layout_weight="2"
-            android:layout_width="0dp"
-            android:layout_height="120dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="F2"
-            android:textColor="@android:color/white"
-            android:gravity="center"
-            android:textSize="25sp"/>
-        <ImageView
-            android:layout_weight="4"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="0dp"
-            android:layout_height="120dp"/>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:text="Insert"
         android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <EditText
-            android:id="@+id/textIntent"
-            android:text="Enter Data"
-            android:textSize="15dp"
-            android:textColor="@android:color/black"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <Button
-            android:id="@+id/btn_Submet"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="Submeet"/>
-        <Button
-            android:layout_marginTop="16dp"
-            android:id="@+id/webLink"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Web site"/>
-        <Button
-            android:id="@+id/saveId"
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="SAVE"/>
-        <TextView
-            android:id="@+id/readPre"
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="15dp"
-            android:textColor="@android:color/holo_red_light"/>
-    </LinearLayout>
-</LinearLayout>
-</ScrollView>
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
